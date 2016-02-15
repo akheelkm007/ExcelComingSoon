@@ -162,24 +162,6 @@ body, html {
   height: 100%;
 }
 
-/*h1 {
-  height: auto;
-  display: table;
-  width: 80%;
-  text-align: center;
-  overflow: auto;
-  margin: auto;
-  position: absolute;
-  top: -75%;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  color: white;
-  font-family:sans-serif;
-  font-weight: 400;
-  font-size: 3em;
-}
-*/
 h2 {
   position: fixed;
   text-align: center;
@@ -203,13 +185,12 @@ h2 a {
   padding: 0 30px;
 }
 
-.calendar-wrapper{padding-top: 200px;}
+.calendar-wrapper{padding-top: 150px;}
 
 .textt{padding-top: -10%;}
 
 .coming
 {
-  position: absolute;
   color: white;
   margin: auto;
   text-align: center;
