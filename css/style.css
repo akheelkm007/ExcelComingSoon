@@ -195,7 +195,7 @@ h2 a {
   margin: auto;
   text-align: center;
   width: 100%;
-  margin-top: 64px;
+  padding-top: 32px;
   font-family: monospace,sans-serif;
 }
 
