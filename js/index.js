@@ -27,7 +27,7 @@ var calendarParams = {
       day: today.getDate(),
       month: today.getMonth(),
       year: 2015,
-      duration: 50,
+      duration: 50, /***********Number of days it moves forward**********/
       durationFlip: 0.4
     },
     startDayDate,
