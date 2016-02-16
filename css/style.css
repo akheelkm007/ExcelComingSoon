@@ -261,9 +261,8 @@ h2 a {
 
 .calendar-wrapper{padding-top: 50px;}
 
-.toolbar
-{
-  height: 64px;
-}
+.toolbar{height: 64px;}
+
+.social{width: 100%;right: 0;}
 
 }
