@@ -1,3 +1,9 @@
+var Mobile = false;
+
+
+if (screen.width  < 768)
+  Mobile = true;
+
 var calendar = document.querySelector('.calendar');
 
 var onStartTweenBottom = function(dayBottomP, dayP){
@@ -21,14 +27,24 @@ var onUpdateTweenTop = function(dayTopP, dayP, currentDayP){
 };
 
 
-
+var ExcelDayDate = new Date(2016, 8,21);
+var durationFlip = 0.25;
 var today = new Date();
+var NumberOfDays = Math.round((ExcelDayDate-today)/(1000*60*60*24));
+
+
+if (Mobile){
+  durationFlip = 0.5;
+  NumberOfDays = 25;
+};
+
+
 var calendarParams = {
       day: today.getDate(),
       month: today.getMonth(),
-      year: 2015,
-      duration: 50, /***********Number of days it moves forward**********/
-      durationFlip: 0.4
+      year: 2016,
+      duration: NumberOfDays, /***********Number of days it moves forward**********/
+      durationFlip: durationFlip
     },
     startDayDate,
     startDay;
@@ -44,17 +60,21 @@ var monthName = "AUG";
 
 function startCalendar(){
 
-  var durationFlip = 0.5;
-  /************************Durattion between flips****************/
-  var i = 0,
-      j = 0;
-  var day,
-      dayBottom,
-      dayTop;
+  var i = 0,j = 0;
+  var day,dayBottom,dayTop;
   var extraDelay = 1;
   
-  console.log()
   startDayDate = new Date(calendarParams.year, calendarParams.month, calendarParams.day - 1);
+
+  if (Mobile){
+    startDayDate = ExcelDayDate;
+    startDayDate.setDate(startDayDate.getDate() - NumberOfDays -1);
+  };
+
+
+
+
+
   startDay = startDayDate.getDate();
       
   setTimeout(function(){
