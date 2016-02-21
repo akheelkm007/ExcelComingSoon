@@ -1,4 +1,4 @@
-var Mobile = false;
+var Mobile = true;
 
 
 if (screen.width  < 768)
@@ -34,7 +34,7 @@ var NumberOfDays = Math.round((ExcelDayDate-today)/(1000*60*60*24));
 
 
 if (Mobile){
-  durationFlip = 0.5;
+  durationFlip = 0.3;
   NumberOfDays = 25;
 };
 

@@ -159,6 +159,7 @@ html, body {
 
 body, html {
   /*background: #007bff;*/
+ /*background:#4285F4;*/
   height: 100%;
 }
 
@@ -198,7 +199,7 @@ h2 a {
   text-align: center;
   width: 100%;
   padding-top: 32px;
-  font-family: monospace,sans-serif;
+  font-family: 'Lobster',monospace,sans-serif;
 }
 
 .toolbar
